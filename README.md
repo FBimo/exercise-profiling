@@ -67,10 +67,10 @@ _testing_ yang digunakan ketika menggunakan baik IntelliJ Profiler maupun JMeter
 ![img_1.png](img_1.png)
 
 #### Before Optimization (IntelliJ Profiler)
-![before_all-student_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fbefore_all-student_profiler.jpg)
+![before_all-student_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/1518a2e2-c7d5-4c84-b85e-0cbecbde46aa)
 
 #### After Optimization (IntelliJ Profiler)
-![after_all-student_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fafter_all-student_profiler.jpg)
+![after_all-student_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/51214ad3-b2fb-40a7-ae06-eab42baf9868)
 
 Pada _endpoint_ `/all-student` yang menggunakan _method_ `getAllStudentsWithCourses` di `StudentService`, 
 saya melakukan optimasi dengan _method_ `studentCourseRepository.findAll` karena dengan _method_ ini, 
@@ -85,10 +85,10 @@ awalnya menggunakan _nested for loop_.
 ![img_4.png](img_4.png)
 
 #### Before Optimization (IntelliJ Profiler)
-![before_all-student-name_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fbefore_all-student-name_profiler.jpg)
+![before_all-student-name_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/1ad99576-d791-4a49-b9af-e2d15aac5223)
 
 #### After Optimization (IntelliJ Profiler)
-![after_all-student-name_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fafter_all-student-name_profiler.jpg)
+![after_all-student-name_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/1bec4cc8-c9df-4dbd-96c7-9ab1c6b4840d)
 
 Pada _endpoint_ `/all-student-name` yang menggunakan _method_ `joinStudentNames` di `StudentService`, 
 saya melakukan optimasi dengan menggunakan `StringBuilder` karena kelas tersebut lebih efisien untuk membuat suatu 
@@ -104,10 +104,10 @@ dan dapat meningkatkan performa secara keseluruhan.
 ![img_5.png](img_5.png)
 
 #### Before Optimization (IntelliJ Profiler)
-![before_highest-gpa_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fbefore_highest-gpa_profiler.jpg)
+![before_highest-gpa_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/047de518-2bcf-4175-be96-9f265719e696)
 
 #### After Optimization (IntelliJ Profiler)
-![after_highest-gpa_profiler.jpg](..%2F..%2FUI%2FKuliah%2FSemester_4%2FProJut%2Fafter_highest-gpa_profiler.jpg)
+![after_highest-gpa_profiler](https://github.com/FBimo/exercise-profiling/assets/119420957/95f32a7e-a1a1-4e05-a157-73e8816336b6)
 
 Pada _endpoint_ `/highest-gpa` yang menggunakan _method_ `findStudentWithHighestGpa` di `StudentService`, saya melakukan
 optimasi dengan menggunakan `studentRepository.findFirstByOrderByGpaDesc`. _Method_ ini sebenarnya _method_ _query_ yang
