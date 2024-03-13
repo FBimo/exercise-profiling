@@ -118,4 +118,9 @@ pertama yang sudah diurutkan berdasarkan poin `gpa` secara _descending_. Berikut
 2. By: Mengindikasikan kriteria yang digunakan.
 3. OrderByGpaDesc: Mengurutkan berdasarkan poin `gpa` secara _descending_.
 
+Setelah melakukan optimasi, terlihat bahwa _CPU Time_ yang diperlukan ketika melakukan komputasi _method-method_ di atas
+berkurang secara signifikan (lebih dari 20%). Namun perlu juga untuk melakukan _testing_ terhadap setiap unit yang ada 
+agar kita juga dapat memastikan bahwa optimasi yang sudah diimplementasikan tidak mengganggu jalannya fungsionalitas 
+program.
+
 </details>
